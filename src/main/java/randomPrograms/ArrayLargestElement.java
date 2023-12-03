@@ -17,10 +17,9 @@ public class ArrayLargestElement {
     }
 
     private static int[] readArray(){
-        int size;
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter the Size of Array: ");
-        size = scanner.nextInt();
+        int size = scanner.nextInt();
 
         int[] array = new int[size];
         for(int i = 0 ; i < size ; i++){
