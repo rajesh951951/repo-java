@@ -7,7 +7,6 @@
 package main.java.randomPrograms;
 
 import java.util.Arrays;
-import java.util.Objects;
 import java.util.Scanner;
 
 public class AnagramStringCheck {
