@@ -1,7 +1,7 @@
 /*
  * Given two Arrays as Input, find & print the common elements in them.
- * Input: array1[] = {23,53,83,39}
- * Output: 83
+ * Input: array1[] = {23,53,83,39}, array2 = {21,23,83}
+ * Output: 23 83
  * */
 
 package main.java.randomPrograms;
