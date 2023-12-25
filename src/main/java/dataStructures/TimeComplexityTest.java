@@ -17,7 +17,7 @@ public class TimeComplexityTest {
     }
 
     private static int findSumUsingFormula(int n) {
-        return n * (n+1) / 2;
+        return n * (n+1) / 2; //the time complexity also depends on type of operations as well.
     }
 
     private static int findSumUsingLoop(int n) {
