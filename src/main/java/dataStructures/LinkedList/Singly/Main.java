@@ -6,21 +6,22 @@ public class Main {
         SinglyLinkedList singlyLinkedList = new SinglyLinkedList();
 
         Node node = singlyLinkedList.createSinglyLinkedList(10);
-        singlyLinkedList.printLinkedList(node);
-        System.out.println(node.value);
-
-        //singlyLinkedList.insertInLinkedList(5,0); //ToDo: TBD - Check and correct for this use case
         //singlyLinkedList.printLinkedList(node);
-        //System.out.println(node.value+"->"+node.next.value);
+        singlyLinkedList.traverseSinlglLinkeList();
+
+        singlyLinkedList.insertInLinkedList(5,0);
+        singlyLinkedList.traverseSinlglLinkeList();
 
         singlyLinkedList.insertInLinkedList(50,3);
-        singlyLinkedList.printLinkedList(node);
-        //System.out.println(node.value+"->"+node.next.value);
+        singlyLinkedList.traverseSinlglLinkeList();
+        //singlyLinkedList.printLinkedList(node);
 
         singlyLinkedList.insertInLinkedList(20,1);
-        singlyLinkedList.printLinkedList(node);
+        singlyLinkedList.traverseSinlglLinkeList();
+        //singlyLinkedList.printLinkedList(node);
 
         singlyLinkedList.insertInLinkedList(30,2);
-        singlyLinkedList.printLinkedList(node);
+        singlyLinkedList.traverseSinlglLinkeList();
+        //singlyLinkedList.printLinkedList(node);
     }
 }

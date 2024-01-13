@@ -57,6 +57,22 @@ public class SinglyLinkedList {
         }
     }
 
+    public void traverseSinlglLinkeList(){
+        if(head == null){
+            System.out.println("Empty List");
+        }else{
+            Node newNode = head;
+            for(int i = 0; i < size; i++){
+                System.out.print(newNode.value);
+                if(i != size-1){
+                    System.out.print("->");
+                }
+                newNode = newNode.next;
+            }
+            System.out.println();
+        }
+
+    }
 
 
 }
