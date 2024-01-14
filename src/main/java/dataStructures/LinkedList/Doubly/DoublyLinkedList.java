@@ -110,4 +110,51 @@ public class DoublyLinkedList {
         }
         return false;
     }
+
+    public void deleteNodeDoublyLinkedList(int location){
+        //when only one node
+        if(head == null){
+            System.out.println();
+        }else if(location == 0) { // delete beginning node
+            if(size == 1){
+                head = null;
+                tail = null;
+                size--;
+            }else{
+                head = head.next;
+                head.prev = null;
+                size--;
+            }
+        }else if(location >= size){ // delete at end
+            DoublyNode tempNode = tail.prev;
+            if(size == 1){
+                head = null;
+                tail = null;
+                size--;
+            }else{
+                tempNode.next = null;
+                tail = tempNode;
+                size--;
+            }
+        }else{ //delete node at specified location
+            DoublyNode tempNode = head;
+            for(int i = 0; i < location -1 ; i++){
+                tempNode = tempNode.next;
+            }
+            tempNode.next = tempNode.next.next;
+            tempNode.next.prev = tempNode;
+            size--;
+        }
+    }
+
+    public void deleteAllNodesDLL(){
+        DoublyNode tempNode = head;
+        for(int i = 0; i < size; i++){
+            tempNode.prev = null;
+            tempNode = tempNode.next;
+        }
+        head = null;
+        tail = null;
+        System.out.println("DLL is deleted successfully.");
+    }
 }
