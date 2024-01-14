@@ -23,5 +23,10 @@ public class Main {
         singlyLinkedList.insertInLinkedList(30,2);
         singlyLinkedList.traverseSinlglLinkeList();
         //singlyLinkedList.printLinkedList(node);
+
+        System.out.println();
+        singlyLinkedList.searchValue(20);
+        singlyLinkedList.searchValue(10);
+        singlyLinkedList.searchValue(40);
     }
 }
