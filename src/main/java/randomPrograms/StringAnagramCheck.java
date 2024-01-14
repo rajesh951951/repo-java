@@ -9,7 +9,7 @@ package main.java.randomPrograms;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class AnagramStringCheck {
+public class StringAnagramCheck {
     public static void main(String[] args) {
         String stringOne = inputString();
         System.out.println("String One: "+stringOne);
