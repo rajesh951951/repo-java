@@ -44,4 +44,70 @@ public class DoublyLinkedList {
         }
         size++;
     }
+
+    public void traverseDoublyLinkedlist(){
+        if(head!=null){
+            DoublyNode tempNode = head;
+            for(int i = 0; i< size; i++){
+                System.out.print(tempNode.value);
+                if(i != size-1){
+                    System.out.print("->");
+                }
+                tempNode = tempNode.next;
+            }
+        }else{
+            System.out.println("Doubly Linked List Does not exists.");
+        }
+        System.out.println();
+    }
+
+    public void revereseTraverseDLL(){
+        if(head != null){
+            DoublyNode tempNode = tail;
+            for(int i = 0; i < size; i++){
+                System.out.print(tempNode.value);
+                if(i != size-1) {
+                    System.out.print("<-");
+                }
+                tempNode = tempNode.prev;
+            }
+        }else{
+            System.out.println("Doubly Linked List Does not exists.");
+        }
+        System.out.println();
+    }
+
+    public boolean searchDoublyLinkedList(int value){
+        if(head!=null){
+            DoublyNode tempNode = head;
+            for(int i = 0; i < size; i++){
+                if(tempNode.value == value){
+                    System.out.println("Element "+value+" found at index "+i);
+                    return true;
+                }
+                tempNode = tempNode.next;
+            }
+        }else{
+            System.out.println("Doubly Linked List Does not exists.");
+            return false;
+        }
+        return false;
+    }
+
+    public boolean searchReverseDoublyLinkedList(int value){
+        if(head!=null){
+            DoublyNode tempNode = tail;
+            for(int i = 0; i < size; i++){
+                if(tempNode.value == value){
+                    System.out.println("Element "+value+" found at index "+i+" in Reverse Traversal search.");
+                    return true;
+                }
+                tempNode = tempNode.prev;
+            }
+        }else{
+            System.out.println("Doubly Linked List Does not exists.");
+            return false;
+        }
+        return false;
+    }
 }
