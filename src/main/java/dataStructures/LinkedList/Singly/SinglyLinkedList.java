@@ -1,5 +1,7 @@
 package main.java.dataStructures.LinkedList.Singly;
 
+import java.util.Arrays;
+
 public class SinglyLinkedList {
     public  Node head;
     public  Node tail;
@@ -70,6 +72,35 @@ public class SinglyLinkedList {
                 newNode = newNode.next;
             }
             System.out.println();
+        }
+    }
+
+    public void reverseTraverseSinlglLinkeList(){
+        if(head == null){
+            System.out.println("Empty List");
+        }else{
+            int[] array = new int[size];
+            Node tempNode = head;
+            Node newNode = new Node();
+            Node prevNode = new Node();
+            while(tempNode != null){
+                newNode = tempNode;
+                tempNode = tempNode.next;
+
+                newNode.next = prevNode;
+                prevNode = newNode;
+                head = newNode;
+            }
+            for(int i = 0; i < size; i++){
+                System.out.print(prevNode.value);
+                array[i] = prevNode.value;
+                if(i != size-1){
+                    System.out.print("<-");
+                }
+                prevNode = prevNode.next;
+            }
+            System.out.println();
+            System.out.println(Arrays.toString(array));
         }
     }
 
