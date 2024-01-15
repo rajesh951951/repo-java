@@ -30,10 +30,13 @@ public class Main {
         singlyLinkedList.searchValue(40);
 
         singlyLinkedList.traverseSinlglLinkeList();
-        singlyLinkedList.deleteNode(2);
+        //singlyLinkedList.deleteNode(2);
         singlyLinkedList.traverseSinlglLinkeList();
 
-        singlyLinkedList.deleteAllNodes();
+        //singlyLinkedList.deleteAllNodes();
         singlyLinkedList.traverseSinlglLinkeList();
+
+        System.out.println();
+        singlyLinkedList.reverseTraverseSinlglLinkeList();
     }
 }

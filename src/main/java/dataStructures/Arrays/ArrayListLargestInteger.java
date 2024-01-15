@@ -1,10 +1,10 @@
-package main.java.randomPrograms;
+package main.java.dataStructures.Arrays;
 
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
 
-public class ListLargestInteger {
+public class ArrayListLargestInteger {
     public static void main(String[] args) {
         List<Integer> integerList = Arrays.asList(5, 12, 34, 51, 22, 63, 71, 6, 98, 460, 349);
         int maxInt = findMaxIntForLoop(integerList);

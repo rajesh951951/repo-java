@@ -4,7 +4,7 @@
  * Output: 23 83
  * */
 
-package main.java.randomPrograms;
+package main.java.dataStructures.Arrays;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package main.java.randomPrograms;
+package main.java.dataStructures.Arrays;
 
 import java.util.Arrays;
 
