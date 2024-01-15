@@ -2,7 +2,7 @@
 * Check if Array contains the duplicate numbers
 * */
 
-package main.java.randomPrograms;
+package main.java.dataStructures.Arrays;
 
 import java.util.HashSet;
 import java.util.Set;

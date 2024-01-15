@@ -3,7 +3,7 @@
 * Running Sum of 1D Array
 *
 * */
-package main.java.randomPrograms;
+package main.java.dataStructures.Arrays;
 
 import java.util.Arrays;
 

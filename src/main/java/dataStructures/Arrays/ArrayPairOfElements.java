@@ -1,4 +1,4 @@
-package main.java.randomPrograms;
+package main.java.dataStructures.Arrays;
 
 public class ArrayPairOfElements {
     public static void main(String[] args) {

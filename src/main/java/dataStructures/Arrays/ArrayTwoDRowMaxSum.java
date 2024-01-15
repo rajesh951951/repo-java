@@ -2,7 +2,7 @@
  *  Find Sum for a Row in 2-D Array who has max sum value.
  * */
 
-package main.java.randomPrograms;
+package main.java.dataStructures.Arrays;
 
 public class ArrayTwoDRowMaxSum {
     public static void main(String[] args) {
