@@ -36,13 +36,11 @@ public class StringSplitMaxScore {
         int countOneRight = Integer.MIN_VALUE;
 
         for(int i = 1 ; i <  strLen; i++){
-            //System.out.println("--------------- i is "+i);
             // string left to hold the left substring for count 0
             String left = string.substring(0,i);
-            //System.out.println("left - " +left);
+
             // string right to hold the right substring for count 1
             String right = string.substring(i, strLen);
-            //System.out.println("right - " +right);
 
             // Map to hold unique char counts
             /*IntStream leftStream = left.chars();
@@ -65,17 +63,11 @@ public class StringSplitMaxScore {
                     String.valueOf(charOne)
             );
 
-            //System.out.println("countZeroLeft - "+countZeroLeft);
-            //System.out.println("countOneRight - "+countOneRight);
             int sumCount = countZeroLeft + countOneRight;
 
             if(sumCount > score)
                 score = sumCount;
-            //System.out.println("sumCount - "+sumCount);
-            //System.out.println("---------------");
         }
-
-        //System.out.println("score - "+score);
         return score;
     }
 }
